@@ -1682,7 +1682,7 @@ PrefabInstance:
     - target: {fileID: 2248233217316353126, guid: 10e1e04d9b6d4934d96d5b45f6df2332,
         type: 3}
       propertyPath: m_Name
-      value: RoadPiece (1)
+      value: Straight
       objectReference: {fileID: 0}
     - target: {fileID: 2248233217316353050, guid: 10e1e04d9b6d4934d96d5b45f6df2332,
         type: 3}

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4060978300090981740}
   - component: {fileID: 503855880356166330}
   m_Layer: 0
-  m_Name: RoadPiece (13)
+  m_Name: Crosswalk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6978458499585779157}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: -0.00000035762784}
-  m_LocalPosition: {x: -1.3999996, y: -0.1, z: -3.0500002}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 0.25, z: 2}
   m_Children: []
   m_Father: {fileID: 0}

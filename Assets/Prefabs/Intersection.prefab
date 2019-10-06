@@ -1604,11 +1604,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3024214578805643001}
     m_Modifications:
-    - target: {fileID: 6978458499585779157, guid: 954f247aa95a3cd4f8d5a7e0ccda2cd3,
-        type: 3}
-      propertyPath: m_Name
-      value: RoadPiece (13)
-      objectReference: {fileID: 0}
     - target: {fileID: 6570374980314742950, guid: 954f247aa95a3cd4f8d5a7e0ccda2cd3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1664,6 +1659,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6978458499585779157, guid: 954f247aa95a3cd4f8d5a7e0ccda2cd3,
+        type: 3}
+      propertyPath: m_Name
+      value: RoadPiece (13)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 954f247aa95a3cd4f8d5a7e0ccda2cd3, type: 3}
 --- !u!4 &1199159915816913877 stripped
@@ -1679,11 +1679,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3024214578805643001}
     m_Modifications:
-    - target: {fileID: 2248233217316353126, guid: 10e1e04d9b6d4934d96d5b45f6df2332,
-        type: 3}
-      propertyPath: m_Name
-      value: Straight
-      objectReference: {fileID: 0}
     - target: {fileID: 2248233217316353050, guid: 10e1e04d9b6d4934d96d5b45f6df2332,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1738,6 +1733,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2248233217316353126, guid: 10e1e04d9b6d4934d96d5b45f6df2332,
+        type: 3}
+      propertyPath: m_Name
+      value: Straight
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10e1e04d9b6d4934d96d5b45f6df2332, type: 3}

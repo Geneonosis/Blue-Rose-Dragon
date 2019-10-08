@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.4964127, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1365,7 +1365,6 @@ GameObject:
   - component: {fileID: 4568934232202756}
   - component: {fileID: 33230394482063170}
   - component: {fileID: 23350828319118840}
-  - component: {fileID: 64145693692107278}
   - component: {fileID: 1266424092768615}
   m_Layer: 0
   m_Name: Body
@@ -2920,7 +2919,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1536997437040074}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.21, y: 0.32, z: 31.52}
+  m_LocalPosition: {x: -0.21, y: 3.25, z: 31.52}
   m_LocalScale: {x: 0.29105034, y: 0.29105034, z: 0.29105034}
   m_Children:
   - {fileID: 4779181017212606}
@@ -4163,20 +4162,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300038, guid: 9a91c5e887f917e419bfe9f63efe6056, type: 3}
---- !u!64 &64145693692107278
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1266424092768614}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 4300008, guid: 9a91c5e887f917e419bfe9f63efe6056, type: 3}
 --- !u!95 &95679165776899108
 Animator:
   serializedVersion: 3

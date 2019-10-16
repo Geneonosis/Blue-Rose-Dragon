@@ -17,5 +17,5 @@ public class changeScene : MonoBehaviour
         
     }
 
-    public void OnMouseClick() { SceneManager.LoadScene("Jada_Test_Scene"); }
+    public void OnMouseClick() { SceneManager.LoadScene("GeneScene"); }
 }

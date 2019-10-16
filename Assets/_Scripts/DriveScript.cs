@@ -10,8 +10,8 @@ public class DriveScript : MonoBehaviour
 
     public WheelCollider FL_Wheel, FR_Wheel;
     public WheelCollider RL_Wheel, RR_Wheel;
-    public Transform FL_WheelT, FR_WheelT;
-    public Transform RL_WheelT, RR_WheelT;
+    //public Transform FL_WheelT, FR_WheelT;
+    //public Transform RL_WheelT, RR_WheelT;
     public float maxSteerAngle = 30;
     public float motorForce = 100;
 
@@ -36,7 +36,7 @@ public class DriveScript : MonoBehaviour
         RR_Wheel.motorTorque = _verticalInput * motorForce;
         RL_Wheel.motorTorque = _verticalInput * motorForce;
     }
-
+    /*
     public void UpdateWheelPoses()
     {
         UpdateWheelPose(FR_Wheel, FR_WheelT);
@@ -56,13 +56,13 @@ public class DriveScript : MonoBehaviour
         _transform.rotation = _quat;
 
     }
-
+   */ 
     private void Update()
     {
         GetInput();
         Steer();
         Accelerate();
-        UpdateWheelPoses();
+        //UpdateWheelPoses();
     }
 }
 

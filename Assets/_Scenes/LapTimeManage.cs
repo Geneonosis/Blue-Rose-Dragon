@@ -20,38 +20,41 @@ public class LapTimeManage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MilliCounter += (Time.deltaTime * 10);
-        MilliDisplay = MilliCounter.ToString("F0");
-        MilliBox.GetComponent<TextMeshProUGUI>().text = "" + MilliDisplay;
+        if (Time.time > 3f)
+        {
+            MilliCounter += (Time.deltaTime * 10);
+            MilliDisplay = MilliCounter.ToString("F0");
+            MilliBox.GetComponent<TextMeshProUGUI>().text = "" + MilliDisplay;
 
-        if (MilliCounter >= 10)
-        {
-            MilliCounter = 0;
-            SecondCounter += 1;
-        }
+            if (MilliCounter >= 10)
+            {
+                MilliCounter = 0;
+                SecondCounter += 1;
+            }
 
-        if (SecondCounter <= 9)
-        {
-            SecondBox.GetComponent<TextMeshProUGUI>().text = "0" + SecondCounter + ".";
-        }
-        else
-        {
-            SecondBox.GetComponent<TextMeshProUGUI>().text = "" + SecondCounter + ".";
-        }
+            if (SecondCounter <= 9)
+            {
+                SecondBox.GetComponent<TextMeshProUGUI>().text = "0" + SecondCounter + ".";
+            }
+            else
+            {
+                SecondBox.GetComponent<TextMeshProUGUI>().text = "" + SecondCounter + ".";
+            }
 
-        if (SecondCounter >= 60)
-        {
-            SecondCounter = 0;
-            MinuteCounter += 1;
-        }
+            if (SecondCounter >= 60)
+            {
+                SecondCounter = 0;
+                MinuteCounter += 1;
+            }
 
-        if (MinuteCounter <= 9)
-        {
-            MinuteBox.GetComponent<TextMeshProUGUI>().text = "0" + MinuteCounter + ":";
-        }
-        else
-        {
-            MinuteBox.GetComponent<TextMeshProUGUI>().text = "" + MinuteCounter + ":";
+            if (MinuteCounter <= 9)
+            {
+                MinuteBox.GetComponent<TextMeshProUGUI>().text = "0" + MinuteCounter + ":";
+            }
+            else
+            {
+                MinuteBox.GetComponent<TextMeshProUGUI>().text = "" + MinuteCounter + ":";
+            }
         }
 
     }

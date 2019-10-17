@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CarWheel : MonoBehaviour
-{
+{/*
     public WheelCollider targetWheel;
     private Vector3 WheelPosition = new Vector3();
     private Quaternion WheelRotation = new Quaternion();
@@ -14,5 +14,5 @@ public class CarWheel : MonoBehaviour
         targetWheel.GetWorldPose(out WheelPosition, out WheelRotation);
         transform.position = WheelPosition;
         transform.rotation = WheelRotation;
-    }
+    }*/
 }

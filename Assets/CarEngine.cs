@@ -67,10 +67,10 @@ public class CarEngine : MonoBehaviour
 
     private void CheckWPDistance()
     {
-        print(Vector3.Distance(transform.position, nodes[curNode].position) < 0.05f);
+        //print(Vector3.Distance(transform.position, nodes[curNode].position) < 0.05f);
         if(Vector3.Distance(transform.position, nodes[curNode].position) < 0.9f)
         {
-            print("Current node = " + curNode);
+            //print("Current node = " + curNode);
             if(curNode == nodes.Count - 1)
             { 
                 curNode = 0;

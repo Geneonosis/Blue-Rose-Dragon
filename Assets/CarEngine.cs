@@ -5,10 +5,14 @@ using UnityEngine;
 public class CarEngine : MonoBehaviour
 {
     public Transform path;
-    public float maxSteerAngle = 45;
+    public float maxSteerAngle = 30;
     public WheelCollider wheelFL;
     public WheelCollider wheelFR;
-    //public maxMotorTorque = 
+    //public WheelCollider wheelRL;
+    //public WheelCollider wheelRR;
+    public float maxMotorTorque = 80f;
+    public float curSpeed;
+    public float maxSpeed = 100f;
 
     private List<Transform> nodes;
     private int curNode = 0;
@@ -38,7 +42,7 @@ public class CarEngine : MonoBehaviour
     private void ApplySteer()
     {
         Vector3 relVector = transform.InverseTransformPoint(nodes[curNode].position);
-        //relVector = relVector / relVector.magnitude;
+        //relVector = relVector / relVector.magnitudze;
         float nSteer = (relVector.x / relVector.magnitude)*maxSteerAngle;
         wheelFL.steerAngle = nSteer;
         wheelFR.steerAngle = nSteer;
@@ -46,20 +50,33 @@ public class CarEngine : MonoBehaviour
 
     private void Drive()
     {
-        wheelFL.motorTorque = 100f;
-        wheelFR.motorTorque = 100f;
+        curSpeed = 2 * wheelFL.radius * wheelFL.rpm * Mathf.PI * 60 / 1000;
+        if (curSpeed < maxSpeed)
+        {
+            wheelFL.motorTorque = maxMotorTorque;
+            wheelFR.motorTorque = maxMotorTorque;
+            //wheelRL.motorTorque = 100f;
+            //wheelRR.motorTorque = 100f;
+        }
+        else
+        {
+            wheelFL.motorTorque = 0;
+            wheelFR.motorTorque = 0;
+        }
     }
 
     private void CheckWPDistance()
     {
-        if(Vector3.Distance(transform.position, nodes[curNode].position) < 0.5f)
+        print(Vector3.Distance(transform.position, nodes[curNode].position) < 0.05f);
+        if(Vector3.Distance(transform.position, nodes[curNode].position) < 0.9f)
         {
+            print("Current node = " + curNode);
             if(curNode == nodes.Count - 1)
-            {
+            { 
                 curNode = 0;
             }
             else
-            {
+            { 
                 curNode++;
             }
         }

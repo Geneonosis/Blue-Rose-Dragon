@@ -8,8 +8,8 @@ public class CarEngine : MonoBehaviour
     public float maxSteerAngle = 30;
     public WheelCollider wheelFL;
     public WheelCollider wheelFR;
-    //public WheelCollider wheelRL;
-    //public WheelCollider wheelRR;
+    public WheelCollider wheelRL;
+    public WheelCollider wheelRR;
     public float maxMotorTorque = 80f;
     public float curSpeed;
     public float maxSpeed = 100f;
@@ -42,7 +42,7 @@ public class CarEngine : MonoBehaviour
     private void ApplySteer()
     {
         Vector3 relVector = transform.InverseTransformPoint(nodes[curNode].position);
-        //relVector = relVector / relVector.magnitudze;
+        relVector = relVector / relVector.magnitude;
         float nSteer = (relVector.x / relVector.magnitude)*maxSteerAngle;
         wheelFL.steerAngle = nSteer;
         wheelFR.steerAngle = nSteer;
@@ -55,8 +55,8 @@ public class CarEngine : MonoBehaviour
         {
             wheelFL.motorTorque = maxMotorTorque;
             wheelFR.motorTorque = maxMotorTorque;
-            //wheelRL.motorTorque = 100f;
-            //wheelRR.motorTorque = 100f;
+            wheelRL.motorTorque = 100f;
+            wheelRR.motorTorque = 100f;
         }
         else
         {

@@ -15,7 +15,7 @@ public class LapFinish : MonoBehaviour
 
     public GameObject LapTimeBox;
 
-    private void OnTriggerEnter()
+    void OnTriggerEnter()
     {
         if (LapTimeManage.SecondCounter <= 9)
         {

@@ -15,7 +15,7 @@ public class DriveScript : MonoBehaviour
     //public Transform RL_WheelT, RR_WheelT;
     public float maxSteerAngle = 30;
     public float motorForce = 100;
-
+    public float currentSpeed;
 
     public void Start()
     {
@@ -52,6 +52,7 @@ public class DriveScript : MonoBehaviour
         FR_Wheel.motorTorque = _verticalInput * motorForce;
         RR_Wheel.motorTorque = _verticalInput * motorForce;
         RL_Wheel.motorTorque = _verticalInput * motorForce;
+        currentSpeed = FL_Wheel.rpm * FL_Wheel.radius * Mathf.PI * 60 / 1000;
     }
     /*
     public void UpdateWheelPoses()

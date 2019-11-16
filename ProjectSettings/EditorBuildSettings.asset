@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/_Scenes/Jada_Test_Scene.unity
     guid: 9f7ac30fd68221143a0667126f9214d5
   - enabled: 1
-    path: Assets/_Scenes/GeneScene.unity
+    path: Assets/_Scenes/Tokyo.unity
     guid: 51a7e90046f7d3f4baa5c229e1ed0faf
   m_configObjects: {}

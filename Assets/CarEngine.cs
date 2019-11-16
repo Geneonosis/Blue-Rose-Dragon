@@ -79,6 +79,11 @@ public class CarEngine : MonoBehaviour
             { 
                 curNode++;
             }
+
+            curSpeed -= 10;
         }
-    }
+        //if (Vector3.Distance(transform.position, nodes[curNode].position) < 1.5f)
+       // {
+       //     curSpeed -= 10;
+       }
 }

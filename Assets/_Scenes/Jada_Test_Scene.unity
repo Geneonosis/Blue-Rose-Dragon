@@ -1023,7 +1023,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1978568043}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 21.88, y: -1.39, z: 33.83}
+  m_LocalPosition: {x: 26.5, y: -1.39, z: 36.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1802461278}
@@ -1852,6 +1852,8 @@ MonoBehaviour:
   maxSteerAngle: 45
   wheelFL: {fileID: 643977164}
   wheelFR: {fileID: 444151569}
+  wheelRL: {fileID: 1300739056}
+  wheelRR: {fileID: 1591041139}
   maxMotorTorque: 100
   curSpeed: 0
   maxSpeed: 200

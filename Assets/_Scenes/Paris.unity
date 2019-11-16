@@ -170,7 +170,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!154 &101291861
 TerrainCollider:
@@ -181,7 +181,7 @@ TerrainCollider:
   m_GameObject: {fileID: 101291860}
   m_Material: {fileID: 0}
   m_Enabled: 1
-  m_TerrainData: {fileID: 15600000, guid: 7fee8fcac66ef4d41b5b0d35354e5f53, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: 68f610c676734400d895deed0818289e, type: 2}
   m_EnableTreeColliders: 1
 --- !u!218 &101291862
 Terrain:
@@ -249,7 +249,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!154 &116940286
 TerrainCollider:
@@ -260,7 +260,7 @@ TerrainCollider:
   m_GameObject: {fileID: 116940285}
   m_Material: {fileID: 0}
   m_Enabled: 1
-  m_TerrainData: {fileID: 15600000, guid: 5dc43e35f121c4fdc8f408a65abf6c6f, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: 68f610c676734400d895deed0818289e, type: 2}
   m_EnableTreeColliders: 1
 --- !u!218 &116940287
 Terrain:
@@ -410,7 +410,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!154 &279899052
 TerrainCollider:
@@ -421,7 +421,7 @@ TerrainCollider:
   m_GameObject: {fileID: 279899051}
   m_Material: {fileID: 0}
   m_Enabled: 1
-  m_TerrainData: {fileID: 15600000, guid: 82e7b140f6a88460388273f6e5930b32, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: 68f610c676734400d895deed0818289e, type: 2}
   m_EnableTreeColliders: 1
 --- !u!218 &279899053
 Terrain:
@@ -489,7 +489,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!154 &326689271
 TerrainCollider:
@@ -500,7 +500,7 @@ TerrainCollider:
   m_GameObject: {fileID: 326689270}
   m_Material: {fileID: 0}
   m_Enabled: 1
-  m_TerrainData: {fileID: 15600000, guid: ccc84d92ccb5a42a09de65a66ea491b1, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: 68f610c676734400d895deed0818289e, type: 2}
   m_EnableTreeColliders: 1
 --- !u!218 &326689272
 Terrain:
@@ -568,7 +568,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!154 &356050564
 TerrainCollider:
@@ -579,7 +579,7 @@ TerrainCollider:
   m_GameObject: {fileID: 356050563}
   m_Material: {fileID: 0}
   m_Enabled: 1
-  m_TerrainData: {fileID: 15600000, guid: 735657d00b13d4f56889a18f96e00289, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: 68f610c676734400d895deed0818289e, type: 2}
   m_EnableTreeColliders: 1
 --- !u!218 &356050565
 Terrain:
@@ -716,7 +716,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!154 &554774775
 TerrainCollider:
@@ -727,7 +727,7 @@ TerrainCollider:
   m_GameObject: {fileID: 554774774}
   m_Material: {fileID: 0}
   m_Enabled: 1
-  m_TerrainData: {fileID: 15600000, guid: fc7d2220b2bdf4b2db74bc594e0bf70a, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: 68f610c676734400d895deed0818289e, type: 2}
   m_EnableTreeColliders: 1
 --- !u!218 &554774776
 Terrain:
@@ -874,7 +874,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!154 &658167741
 TerrainCollider:
@@ -885,7 +885,7 @@ TerrainCollider:
   m_GameObject: {fileID: 658167740}
   m_Material: {fileID: 0}
   m_Enabled: 1
-  m_TerrainData: {fileID: 15600000, guid: 20fb09d39f72e47e1b8299bae0c256cb, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: 68f610c676734400d895deed0818289e, type: 2}
   m_EnableTreeColliders: 1
 --- !u!218 &658167742
 Terrain:
@@ -953,7 +953,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!154 &1094436708
 TerrainCollider:
@@ -964,7 +964,7 @@ TerrainCollider:
   m_GameObject: {fileID: 1094436707}
   m_Material: {fileID: 0}
   m_Enabled: 1
-  m_TerrainData: {fileID: 15600000, guid: 0475b9e1d6f21422394eaf8cf5c7b0fa, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: 68f610c676734400d895deed0818289e, type: 2}
   m_EnableTreeColliders: 1
 --- !u!218 &1094436709
 Terrain:
@@ -1089,7 +1089,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!154 &1788384788
 TerrainCollider:
@@ -1100,7 +1100,7 @@ TerrainCollider:
   m_GameObject: {fileID: 1788384787}
   m_Material: {fileID: 0}
   m_Enabled: 1
-  m_TerrainData: {fileID: 15600000, guid: 1ae1c8c6ea6954bceaec2da7b46645b3, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: 68f610c676734400d895deed0818289e, type: 2}
   m_EnableTreeColliders: 1
 --- !u!218 &1788384789
 Terrain:
@@ -1168,7 +1168,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!154 &1861427029
 TerrainCollider:
@@ -1179,7 +1179,7 @@ TerrainCollider:
   m_GameObject: {fileID: 1861427028}
   m_Material: {fileID: 0}
   m_Enabled: 1
-  m_TerrainData: {fileID: 15600000, guid: 0b48ab6b17bc1445cb8492c9a179659f, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: 68f610c676734400d895deed0818289e, type: 2}
   m_EnableTreeColliders: 1
 --- !u!218 &1861427030
 Terrain:
@@ -1247,7 +1247,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!154 &1932211506
 TerrainCollider:
@@ -1258,7 +1258,7 @@ TerrainCollider:
   m_GameObject: {fileID: 1932211505}
   m_Material: {fileID: 0}
   m_Enabled: 1
-  m_TerrainData: {fileID: 15600000, guid: 8de3ebf5e05ed42ad92fad394831ea24, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: 68f610c676734400d895deed0818289e, type: 2}
   m_EnableTreeColliders: 1
 --- !u!218 &1932211507
 Terrain:

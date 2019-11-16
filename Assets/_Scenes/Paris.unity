@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.49780262, g: 0.49780262, b: 0.49780262, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -128,7 +128,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!154 &15208245
 TerrainCollider:
@@ -184,12 +184,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 15208244}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -500, y: 0, z: 1000}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -590.3738, y: 4.9357147, z: 498.2837}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_Father: {fileID: 2012382087}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &46738080 stripped
 Transform:
@@ -213,7 +213,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 4294967294
   m_IsActive: 1
 --- !u!154 &166989297
 TerrainCollider:
@@ -356,6 +356,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Background house_6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 20012689f71b9ac46a0263c3818b25ee, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 20012689f71b9ac46a0263c3818b25ee, type: 3}
       propertyPath: m_LocalPosition.x
       value: -69.5379
@@ -403,7 +407,7 @@ PrefabInstance:
     - target: {fileID: 2300000, guid: 20012689f71b9ac46a0263c3818b25ee, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: ac5dcba419d1d464bb2a0ad9fbd585ab, type: 2}
+      objectReference: {fileID: 2100000, guid: 98cee965433d0e645b2c5b1e4b896f9a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20012689f71b9ac46a0263c3818b25ee, type: 3}
 --- !u!1001 &266114802
@@ -573,7 +577,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!154 &292502798
 TerrainCollider:
@@ -629,12 +633,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 292502797}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 500, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 409.62622, y: 4.9357147, z: -501.7163}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_Father: {fileID: 2012382087}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &366710796 stripped
 Transform:
@@ -652,6 +656,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: f9473625fa37c3d49b0d067029b18ec9, type: 3}
       propertyPath: m_Name
       value: Background house_1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f9473625fa37c3d49b0d067029b18ec9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f9473625fa37c3d49b0d067029b18ec9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -794,6 +802,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: f9473625fa37c3d49b0d067029b18ec9, type: 3}
       propertyPath: m_Name
       value: Background house_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f9473625fa37c3d49b0d067029b18ec9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f9473625fa37c3d49b0d067029b18ec9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -994,6 +1006,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Background house_1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f9473625fa37c3d49b0d067029b18ec9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f9473625fa37c3d49b0d067029b18ec9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 250
@@ -1060,7 +1076,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 4294967294
   m_IsActive: 1
 --- !u!154 &556715564
 TerrainCollider:
@@ -1501,6 +1517,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Background house_1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f9473625fa37c3d49b0d067029b18ec9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f9473625fa37c3d49b0d067029b18ec9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 358
@@ -1548,7 +1568,7 @@ PrefabInstance:
     - target: {fileID: 2300000, guid: f9473625fa37c3d49b0d067029b18ec9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: b467de0a4a31964468be4bc5fc80cc92, type: 2}
+      objectReference: {fileID: 2100000, guid: ac5dcba419d1d464bb2a0ad9fbd585ab, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9473625fa37c3d49b0d067029b18ec9, type: 3}
 --- !u!4 &928304577 stripped
@@ -1717,7 +1737,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 4294967294
   m_IsActive: 1
 --- !u!154 &1179906159
 TerrainCollider:
@@ -1796,7 +1816,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!154 &1184274887
 TerrainCollider:
@@ -1852,12 +1872,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1184274886}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1000, y: 0, z: 500}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1090.3738, y: 4.9357147, z: -1.7163086}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_Father: {fileID: 2012382087}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1204254139
 GameObject:
@@ -1875,7 +1895,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!154 &1204254140
 TerrainCollider:
@@ -1931,12 +1951,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1204254139}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -500}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -90.373764, y: 4.9357147, z: -1001.7163}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_Father: {fileID: 2012382087}
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1275252068
 PrefabInstance:
@@ -2242,7 +2262,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!154 &1333564666
 TerrainCollider:
@@ -2298,12 +2318,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1333564665}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 500, y: 0, z: 500}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 409.62622, y: 4.9357147, z: -1.7163086}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_Father: {fileID: 2012382087}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1337756129
 PrefabInstance:
@@ -2384,6 +2404,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: f9473625fa37c3d49b0d067029b18ec9, type: 3}
       propertyPath: m_Name
       value: Background house_1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f9473625fa37c3d49b0d067029b18ec9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f9473625fa37c3d49b0d067029b18ec9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2526,7 +2550,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 4294967294
   m_IsActive: 1
 --- !u!154 &1403261460
 TerrainCollider:
@@ -2729,7 +2753,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!154 &1527341722
 TerrainCollider:
@@ -2785,12 +2809,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1527341721}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1000}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -90.373764, y: 4.9357147, z: 498.2837}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_Father: {fileID: 2012382087}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1566817577
 PrefabInstance:
@@ -2941,6 +2965,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Background house_4
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 22b9af19c7e5ac848b6346d65ba50d54, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 22b9af19c7e5ac848b6346d65ba50d54, type: 3}
       propertyPath: m_LocalPosition.x
       value: 230
@@ -3007,7 +3035,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!154 &1747588028
 TerrainCollider:
@@ -3063,12 +3091,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1747588027}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -500, y: 0, z: -500}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -590.3738, y: 4.9357147, z: -1001.7163}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_Father: {fileID: 2012382087}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1767796520
 PrefabInstance:
@@ -3080,6 +3108,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: f8b35845474e0c64fbcab7ee9d01c8c3, type: 3}
       propertyPath: m_Name
       value: Background house_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f8b35845474e0c64fbcab7ee9d01c8c3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f8b35845474e0c64fbcab7ee9d01c8c3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3128,7 +3160,7 @@ PrefabInstance:
     - target: {fileID: 2300000, guid: f8b35845474e0c64fbcab7ee9d01c8c3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 7444ada718ad2564fb0d66a7661e9ffa, type: 2}
+      objectReference: {fileID: 2100000, guid: b467de0a4a31964468be4bc5fc80cc92, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8b35845474e0c64fbcab7ee9d01c8c3, type: 3}
 --- !u!1 &1792015476
@@ -3147,7 +3179,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!154 &1792015477
 TerrainCollider:
@@ -3203,12 +3235,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1792015476}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1000, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1090.3738, y: 4.9357147, z: -501.7163}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_Father: {fileID: 2012382087}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1814597018
 PrefabInstance:
@@ -3220,6 +3252,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: f9473625fa37c3d49b0d067029b18ec9, type: 3}
       propertyPath: m_Name
       value: Background house_1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f9473625fa37c3d49b0d067029b18ec9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f9473625fa37c3d49b0d067029b18ec9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3378,7 +3414,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 1
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2012382087
 Transform:
@@ -3395,6 +3431,14 @@ Transform:
   - {fileID: 1179906161}
   - {fileID: 166989299}
   - {fileID: 1403261462}
+  - {fileID: 15208247}
+  - {fileID: 1184274889}
+  - {fileID: 1792015479}
+  - {fileID: 1333564668}
+  - {fileID: 292502800}
+  - {fileID: 1527341724}
+  - {fileID: 1747588030}
+  - {fileID: 1204254142}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

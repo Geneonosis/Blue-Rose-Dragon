@@ -34,8 +34,9 @@ public class CarEngine : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        ApplySteer();
+        
         Drive();
+        ApplySteer();
         CheckWPDistance();
     }
 
@@ -43,9 +44,17 @@ public class CarEngine : MonoBehaviour
     {
         Vector3 relVector = transform.InverseTransformPoint(nodes[curNode].position);
         relVector = relVector / relVector.magnitude;
-        float nSteer = (relVector.x / relVector.magnitude)*maxSteerAngle;
+        float nSteer = (relVector.x / relVector.magnitude) * maxSteerAngle;
         wheelFL.steerAngle = nSteer;
         wheelFR.steerAngle = nSteer;
+        if (Vector3.Distance(nodes[curNode+1].position, nodes[curNode].position) < 10f)
+        {
+            print("Current node = " + curNode + " is near to another node");
+        }
+        else
+        {
+            print("Current node = " + curNode + " is FARRRRRRR from another node");
+        }
     }
 
     private void Drive()
@@ -70,7 +79,7 @@ public class CarEngine : MonoBehaviour
         //print(Vector3.Distance(transform.position, nodes[curNode].position) < 0.05f);
         if(Vector3.Distance(transform.position, nodes[curNode].position) < 0.9f)
         {
-            //print("Current node = " + curNode);
+            print("Current node = " + curNode);
             if(curNode == nodes.Count - 1)
             { 
                 curNode = 0;

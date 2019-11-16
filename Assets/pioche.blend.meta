@@ -15,9 +15,13 @@ ModelImporter:
     400008: Tour Eiffel
     2000000: Camera
     2100000: No Name
+    2100002: None__texture_cuivre_jpg
     2300000: Tour Eiffel
+    2300002: //RootNode
     3300000: Tour Eiffel
+    3300002: //RootNode
     4300000: Tour Eiffel
+    4300002: Tour_Eiffel
     10800000: Lamp
     10800002: Lamp.001
   externalObjects: {}

@@ -7,7 +7,6 @@ public class DriveScript : MonoBehaviour
     private float _horizontalInput;
     private float _verticalInput;
     private float _steerAngle;
-    private bool _enabler;
 
     public WheelCollider FL_Wheel, FR_Wheel;
     public WheelCollider RL_Wheel, RR_Wheel;
@@ -15,6 +14,7 @@ public class DriveScript : MonoBehaviour
     //public Transform RL_WheelT, RR_WheelT;
     public float maxSteerAngle = 30;
     public float motorForce = 100;
+<<<<<<< HEAD
     public float currentSpeed;
 
     public void Start()
@@ -28,6 +28,8 @@ public class DriveScript : MonoBehaviour
         yield return new WaitForSeconds(3f);
         _enabler = true;
     }
+=======
+>>>>>>> parent of 5011d1a... Merge branch 'master' into Kaito's-Shinanigans(part2)
 
     public void GetInput()
     {
@@ -77,12 +79,9 @@ public class DriveScript : MonoBehaviour
    */ 
     private void Update()
     {
-        if (_enabler == true)
-        {
-            GetInput();
-            Steer();
-            Accelerate();
-        }
+        GetInput();
+        Steer();
+        Accelerate();
         //UpdateWheelPoses();
     }
 }

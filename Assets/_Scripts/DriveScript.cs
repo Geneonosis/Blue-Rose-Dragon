@@ -45,6 +45,9 @@ public class DriveScript : MonoBehaviour
 
     public void Accelerate()
     {
+        if(Input.GetKey("down")){
+            motorForce = motorForce * 5;
+        }
         FL_Wheel.motorTorque = _verticalInput * motorForce;
         FR_Wheel.motorTorque = _verticalInput * motorForce;
         RR_Wheel.motorTorque = _verticalInput * motorForce;

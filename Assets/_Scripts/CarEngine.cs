@@ -34,7 +34,7 @@ public class CarEngine : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        
+
         Drive();
         ApplySteer();
         CheckWPDistance();
@@ -47,7 +47,7 @@ public class CarEngine : MonoBehaviour
         float nSteer = (relVector.x / relVector.magnitude) * maxSteerAngle;
         wheelFL.steerAngle = nSteer;
         wheelFR.steerAngle = nSteer;
-        if (Vector3.Distance(nodes[curNode+1].position, nodes[curNode].position) < 10f)
+        if (Vector3.Distance(nodes[curNode + 1].position, nodes[curNode].position) < 10f)
         {
             print("Current node = " + curNode + " is near to another node");
         }
@@ -77,22 +77,34 @@ public class CarEngine : MonoBehaviour
     private void CheckWPDistance()
     {
         //print(Vector3.Distance(transform.position, nodes[curNode].position) < 0.05f);
-        if(Vector3.Distance(transform.position, nodes[curNode].position) < 0.9f)
+        if (Vector3.Distance(transform.position, nodes[curNode].position) < 0.9f)
         {
             print("Current node = " + curNode);
-            if(curNode == nodes.Count - 1)
-            { 
+            if (curNode == nodes.Count - 1)
+            {
                 curNode = 0;
             }
             else
-            { 
+            {
                 curNode++;
             }
 
             curSpeed -= 10;
         }
         //if (Vector3.Distance(transform.position, nodes[curNode].position) < 1.5f)
-       // {
-       //     curSpeed -= 10;
-       }
+        // {
+        //     curSpeed -= 10;
+    }
 }
+
+
+
+/* SLOW DOWN
+ * 1. keep track of distance between nodes
+ * 2. keep track of distance between car and next node
+ * 3. normalize distance between nodes
+ * 4. calculate 1-(3/4 * normalized distance)
+ * 5. check car dostance to sec is <= item #4
+ * 6. if #5 true then slow down but dont go to 0 speed
+ * 7. if hit new point then recalculate
+ */

@@ -13,6 +13,9 @@ public class CarEngine : MonoBehaviour
     public float maxMotorTorque = 80f;
     public float curSpeed;
     public float maxSpeed = 100f;
+    private float distanceN_N;
+    private float distanceC_N;
+    private float slowDownSpot;
 
     private List<Transform> nodes;
     private int curNode = 0;
@@ -20,7 +23,7 @@ public class CarEngine : MonoBehaviour
     void Start()
     {
         Transform[] pathTranforms = path.GetComponentsInChildren<Transform>();
-        nodes = new List<Transform>();
+        nodes = new List<Transform>();//cant repeat this step
 
         for (int i = 0; i < pathTranforms.Length; i++)
         {
@@ -35,9 +38,11 @@ public class CarEngine : MonoBehaviour
     void FixedUpdate()
     {
 
+        
         Drive();
         ApplySteer();
         CheckWPDistance();
+        SlowDown();
     }
 
     private void ApplySteer()
@@ -47,14 +52,14 @@ public class CarEngine : MonoBehaviour
         float nSteer = (relVector.x / relVector.magnitude) * maxSteerAngle;
         wheelFL.steerAngle = nSteer;
         wheelFR.steerAngle = nSteer;
-        if (Vector3.Distance(nodes[curNode + 1].position, nodes[curNode].position) < 10f)
+        /*if (Vector3.Distance(nodes[curNode + 1].position, nodes[curNode].position) < 10f)
         {
             print("Current node = " + curNode + " is near to another node");
         }
         else
         {
             print("Current node = " + curNode + " is FARRRRRRR from another node");
-        }
+        }*/
     }
 
     private void Drive()
@@ -64,13 +69,15 @@ public class CarEngine : MonoBehaviour
         {
             wheelFL.motorTorque = maxMotorTorque;
             wheelFR.motorTorque = maxMotorTorque;
-            wheelRL.motorTorque = 100f;
-            wheelRR.motorTorque = 100f;
+            wheelRL.motorTorque = 50f;
+            wheelRR.motorTorque = 50f;
         }
         else
         {
             wheelFL.motorTorque = 0;
             wheelFR.motorTorque = 0;
+            wheelRL.motorTorque = -10f;
+            wheelRR.motorTorque = -10f;
         }
     }
 
@@ -89,12 +96,34 @@ public class CarEngine : MonoBehaviour
                 curNode++;
             }
 
-            curSpeed -= 10;
+            //curSpeed -= 10;
         }
         //if (Vector3.Distance(transform.position, nodes[curNode].position) < 1.5f)
         // {
         //     curSpeed -= 10;
     }
+
+    private void SlowDown()
+    {
+        if (curNode == 49)
+        {
+            distanceN_N = Vector3.Distance(nodes[curNode].position, nodes[0].position);
+            distanceC_N = Vector3.Distance(transform.position, nodes[curNode].position);
+            slowDownSpot = 1 - ((distanceN_N * .6f) / distanceN_N);
+            if (distanceC_N <= slowDownSpot)
+                curSpeed /= 2;
+        }
+        else
+        {
+            distanceN_N = Vector3.Distance(nodes[curNode].position, nodes[curNode + 1].position);
+            distanceC_N = Vector3.Distance(transform.position, nodes[curNode].position);
+            slowDownSpot = 1 - ((distanceN_N * .6f) / distanceN_N);
+            if (distanceC_N <= slowDownSpot)
+                curSpeed /= 2;
+        }
+    }
+
+
 }
 
 
@@ -103,7 +132,7 @@ public class CarEngine : MonoBehaviour
  * 1. keep track of distance between nodes
  * 2. keep track of distance between car and next node
  * 3. normalize distance between nodes
- * 4. calculate 1-(3/4 * normalized distance)
+ * 4. calculate 1-(3/4 * distance)
  * 5. check car dostance to sec is <= item #4
  * 6. if #5 true then slow down but dont go to 0 speed
  * 7. if hit new point then recalculate

@@ -52,14 +52,6 @@ public class CarEngine : MonoBehaviour
         float nSteer = (relVector.x / relVector.magnitude) * maxSteerAngle;
         wheelFL.steerAngle = nSteer;
         wheelFR.steerAngle = nSteer;
-        /*if (Vector3.Distance(nodes[curNode + 1].position, nodes[curNode].position) < 10f)
-        {
-            print("Current node = " + curNode + " is near to another node");
-        }
-        else
-        {
-            print("Current node = " + curNode + " is FARRRRRRR from another node");
-        }*/
     }
 
     private void Drive()

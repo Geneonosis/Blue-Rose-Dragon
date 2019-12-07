@@ -6,6 +6,7 @@ TagManager:
   tags:
   - NoEntry
   - PauseMenu
+  - PlayerPosition
   layers:
   - Default
   - TransparentFX

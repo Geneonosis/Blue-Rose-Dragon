@@ -5,11 +5,15 @@ using UnityEngine;
 public class PlacePosition : MonoBehaviour
 {
     public int _placePosition = 0;
+
+    public int indexOfPositionHeadedToward = 1;
     public int trackSegmentNumber = 0;
     public int lapNumber = 0;
 
+    public bool updatedOnce = false;
+
     public Transform _myPosition; //this will just be transform.position;
-    public Transform _destinationLocation;
+    public Vector3 _destinationLocation;
 
     [Tooltip("distance information, leave this field blank, for debugging purposes only")]
     [SerializeField] float distanceFromDestinationLocation = 0;
@@ -17,16 +21,24 @@ public class PlacePosition : MonoBehaviour
     public void Start()
     {
         _myPosition = transform;
+        indexOfPositionHeadedToward = 1;
 
         //TODO: how to I get / update the next position... probably need to access a list of
         //      available nodes and choose from them... JADA might be able to help
 
-        //_destinationLocation = ???
+        //_destinationLocation = 
     }
 
     private void FixedUpdate()
     {
-        distanceFromDestinationLocation = Vector3.Distance(_myPosition.position, _destinationLocation.position);
+        try
+        {
+            distanceFromDestinationLocation = Vector3.Distance(_myPosition.position, _destinationLocation);
+            Debug.Log(gameObject.name + " headed toward: " + indexOfPositionHeadedToward + " : " + _destinationLocation + " distance: " + distanceFromDestinationLocation);
+        }catch(UnassignedReferenceException e)
+        {
+            Debug.Log("Oppsie Woopsie: " + e);
+        }
     }
 
     /// <summary>
@@ -63,5 +75,11 @@ public class PlacePosition : MonoBehaviour
     public float GetLapNumber()
     {
         return lapNumber;
+    }
+
+    public IEnumerator updateController()
+    {
+        yield return new WaitForSeconds(1f);
+        updatedOnce = false;
     }
 }

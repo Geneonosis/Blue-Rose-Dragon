@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6692737517073308568}
+  - component: {fileID: 2957883624279802374}
   m_Layer: 0
   m_Name: SideRailL
   m_TagString: Untagged
@@ -33,6 +34,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 35}
+--- !u!65 &2957883624279802374
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562873326679726290}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.09137325, y: 0.5693681, z: 3.9924984}
+  m_Center: {x: -0.00978371, y: 0.26823562, z: 0.000805974}
 --- !u!1 &2591330406082913538
 GameObject:
   m_ObjectHideFlags: 0

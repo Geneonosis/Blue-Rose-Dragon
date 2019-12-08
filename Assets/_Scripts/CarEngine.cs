@@ -17,13 +17,14 @@ public class CarEngine : MonoBehaviour
     private float distanceC_N;
     private float slowDownSpot;
 
-    private List<Transform> nodes;
+    private List<Transform> nodes = new List<Transform>();
     private int curNode = 0;
+    
     // Start is called before the first frame update
     void Start()
     {
         Transform[] pathTranforms = path.GetComponentsInChildren<Transform>();
-        nodes = new List<Transform>();//cant repeat this step
+        //cant repeat this step
 
         for (int i = 0; i < pathTranforms.Length; i++)
         {

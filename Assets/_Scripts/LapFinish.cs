@@ -19,10 +19,28 @@ public class LapFinish : MonoBehaviour
     public TextMeshProUGUI LapNumberDisplay = null;
     public GameObject finishInformation;
 
+    float time1, time2, time3;
+
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {
+            if(lapCount == 1)
+            {
+                time1 = Time.time;
+                finishInformation.GetComponent<FinishMenuFiller>().SetFirstLapTime(time1);
+            }else if(lapCount == 2)
+            {
+                time2 = Time.time;
+                finishInformation.GetComponent<FinishMenuFiller>().SetSecondLapTime(time2-time1);
+            }else if(lapCount == 3)
+            {
+                time3 = Time.time;
+                finishInformation.GetComponent<FinishMenuFiller>().SetThirdLapTime(time3-time2);
+                finishInformation.GetComponent<FinishMenuFiller>().SetBestTime(time1, time2-time1, time3-time2);
+                finishInformation.GetComponent<FinishMenuFiller>().SetPlaceIndicator();
+            }
+
             lapCount++;
             LapNumberDisplay.text = "" + lapCount;
             

@@ -27620,6 +27620,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3137386452736986046, guid: 238b03f06587740448772e2b17030f26,
+        type: 3}
+      propertyPath: myCar
+      value: 
+      objectReference: {fileID: 6736854673151713187}
+    - target: {fileID: 3137386452736986046, guid: 238b03f06587740448772e2b17030f26,
+        type: 3}
+      propertyPath: positionText
+      value: 
+      objectReference: {fileID: 2725180044409633016}
+    - target: {fileID: 4192927701927626547, guid: 238b03f06587740448772e2b17030f26,
+        type: 3}
+      propertyPath: myCar
+      value: 
+      objectReference: {fileID: 6736854673151713187}
+    - target: {fileID: 4192927701927626547, guid: 238b03f06587740448772e2b17030f26,
+        type: 3}
+      propertyPath: positionText
+      value: 
+      objectReference: {fileID: 2725180044409633016}
     - target: {fileID: 2291715050481558935, guid: 238b03f06587740448772e2b17030f26,
         type: 3}
       propertyPath: m_Name
@@ -27683,6 +27703,11 @@ PrefabInstance:
     - target: {fileID: 2184499229888973993, guid: 238b03f06587740448772e2b17030f26,
         type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2291848706618679995, guid: 238b03f06587740448772e2b17030f26,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:

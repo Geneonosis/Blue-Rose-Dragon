@@ -33,7 +33,22 @@ public class CarEngine : MonoBehaviour
                 nodes.Add(pathTranforms[i]);
             }
         }
-    }
+        for (int i = 0; i < nodes.Count; i++)
+        {
+            Vector3 prevNode = Vector3.zero;
+            Vector3 currentNode = nodes[i].position;
+            print("prev node: " + prevNode + "current node: " + currentNode);
+
+            if (i > 0)
+            {
+                prevNode = nodes[i - 1].position;
+            }
+            else if (i == 0 && nodes.Count > 1)
+            {
+                prevNode = nodes[nodes.Count - 1].position;
+            }
+        }
+        }
 
     // Update is called once per frame
     void FixedUpdate()

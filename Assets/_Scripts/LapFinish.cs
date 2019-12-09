@@ -14,7 +14,6 @@ public class LapFinish : MonoBehaviour
     public GameObject SecondDisplay;
 
     public GameObject MilliDisplay;
-
     public GameObject LapTimeBox;
 
     public TextMeshProUGUI LapNumberDisplay = null;
@@ -26,6 +25,7 @@ public class LapFinish : MonoBehaviour
         {
             lapCount++;
             LapNumberDisplay.text = "" + lapCount;
+            
             if(lapCount > 3)
             {
                 //TODO: pause the game and show finish information
@@ -35,6 +35,8 @@ public class LapFinish : MonoBehaviour
             
             if (LapTimeManage.SecondCounter <= 9)
             {
+                //string str = 
+                //finishInformation.GetComponent<FinishScript>().setLapInformation(lapCount - 1,);
                 SecondDisplay.GetComponent<TextMeshProUGUI>().text = "0" + LapTimeManage.SecondCounter + ".";
             }
             else

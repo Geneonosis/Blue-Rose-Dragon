@@ -16,12 +16,13 @@ public class FallGameOver : MonoBehaviour
     {
         
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        if(other.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
             //set game over screen
             gameOverPannel.SetActive(true);
         }
     }
+       
 }

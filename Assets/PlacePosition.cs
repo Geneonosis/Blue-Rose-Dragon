@@ -34,7 +34,7 @@ public class PlacePosition : MonoBehaviour
         try
         {
             distanceFromDestinationLocation = Vector3.Distance(_myPosition.position, _destinationLocation);
-            Debug.Log(gameObject.name + " headed toward: " + indexOfPositionHeadedToward + " : " + _destinationLocation + " distance: " + distanceFromDestinationLocation);
+            //Debug.Log(gameObject.name + " headed toward: " + indexOfPositionHeadedToward + " : " + _destinationLocation + " distance: " + distanceFromDestinationLocation);
         }catch(UnassignedReferenceException e)
         {
             Debug.Log("Oppsie Woopsie: " + e);

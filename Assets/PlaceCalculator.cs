@@ -28,6 +28,7 @@ public class PlaceCalculator : MonoBehaviour
             checkpoints.Add(checkpoint.position);
         }
         checkpointsArray = checkpoints.ToArray();
+
     }
 
     private void FixedUpdate()
@@ -38,6 +39,8 @@ public class PlaceCalculator : MonoBehaviour
         {
             PlacePosition pp = racer.GetComponent<PlacePosition>();
             pp._destinationLocation = checkpointsArray[pp.indexOfPositionHeadedToward];
+            Debug.Log(pp.indexOfPositionHeadedToward);
+            Debug.Log(pp.GetDistance());
 
             if(pp.GetDistance() < 10 && pp.updatedOnce == false)
             {
@@ -55,11 +58,12 @@ public class PlaceCalculator : MonoBehaviour
             //need some sort of min / max distant checker that will compare across each racer
 
 
-            if (minDistance > pp.GetDistance())
+            /*if (minDistance > pp.GetDistance())
             {
                 minDistance = pp.GetDistance();
                 GameObject minDistanceRacer = pp.gameObject;
-            }
+                minDistanceRacer.GetComponent<PlacePosition>().UpdatePosition(1);
+            }*/
 
 
         }

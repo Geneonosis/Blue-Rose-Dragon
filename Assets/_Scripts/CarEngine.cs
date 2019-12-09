@@ -17,13 +17,14 @@ public class CarEngine : MonoBehaviour
     private float distanceC_N;
     private float slowDownSpot;
 
-    private List<Transform> nodes;
+    private List<Transform> nodes = new List<Transform>();
     private int curNode = 0;
+    public Transform currentNode = null;
     // Start is called before the first frame update
     void Start()
     {
         Transform[] pathTranforms = path.GetComponentsInChildren<Transform>();
-        nodes = new List<Transform>();//cant repeat this step
+        //cant repeat this step
 
         for (int i = 0; i < pathTranforms.Length; i++)
         {
@@ -47,6 +48,7 @@ public class CarEngine : MonoBehaviour
 
     private void ApplySteer()
     {
+        currentNode = nodes[curNode];
         Vector3 relVector = transform.InverseTransformPoint(nodes[curNode].position);
         relVector = relVector / relVector.magnitude;
         float nSteer = (relVector.x / relVector.magnitude) * maxSteerAngle;
@@ -93,7 +95,7 @@ public class CarEngine : MonoBehaviour
 
     private void SlowDown()
     {
-        if (curNode == 49)
+        if (curNode == nodes.Count-1)
         {
             distanceN_N = Vector3.Distance(nodes[curNode].position, nodes[0].position);
             distanceC_N = Vector3.Distance(transform.position, nodes[curNode].position);

@@ -7,21 +7,12 @@ public class HalfWayTrigger : MonoBehaviour
     public GameObject LapCompleteTrig;
     public GameObject HalfLapTrig;
 
-    void OnTriggerEnter()
+    public void OnTriggerEnter(Collider other)
     {
-        LapCompleteTrig.SetActive(true);
-        HalfLapTrig.SetActive(false);
-
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (other.gameObject.tag == "Player")
+        {
+            LapCompleteTrig.SetActive(true);
+            HalfLapTrig.SetActive(false);
+        }
     }
 }

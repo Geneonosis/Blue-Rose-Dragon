@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 public class LapFinish : MonoBehaviour
 {
 
@@ -21,23 +22,23 @@ public class LapFinish : MonoBehaviour
         {
             if (LapTimeManage.SecondCounter <= 9)
             {
-                SecondDisplay.GetComponent<Text>().text = "0" + LapTimeManage.SecondCounter + ".";
+                SecondDisplay.GetComponent<TextMeshProUGUI>().text = "0" + LapTimeManage.SecondCounter + ".";
             }
             else
             {
-                SecondDisplay.GetComponent<Text>().text = "" + LapTimeManage.SecondCounter + ".";
+                SecondDisplay.GetComponent<TextMeshProUGUI>().text = "" + LapTimeManage.SecondCounter + ".";
             }
 
             if (LapTimeManage.MinuteCounter <= 9)
             {
-                MinuteDisplay.GetComponent<Text>().text = "0" + LapTimeManage.MinuteCounter + ".";
+                MinuteDisplay.GetComponent<TextMeshProUGUI>().text = "0" + LapTimeManage.MinuteCounter + ".";
             }
             else
             {
-                MinuteDisplay.GetComponent<Text>().text = "" + LapTimeManage.MinuteCounter + ".";
+                MinuteDisplay.GetComponent<TextMeshProUGUI>().text = "" + LapTimeManage.MinuteCounter + ".";
             }
 
-            MilliDisplay.GetComponent<Text>().text = "" + LapTimeManage.MilliCounter;
+            MilliDisplay.GetComponent<TextMeshProUGUI>().text = "" + LapTimeManage.MilliCounter;
 
             LapTimeManage.MinuteCounter = 0;
             LapTimeManage.SecondCounter = 0;

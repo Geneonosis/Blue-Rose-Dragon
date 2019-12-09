@@ -17,12 +17,16 @@ public class Path : MonoBehaviour
             if(pathTranforms[i] != transform)
             {
                 nodes.Add(pathTranforms[i]);
+                print("Adding node: " + pathTranforms[i]);
+
             }
         }
+        print("Nodes.count: " + nodes.Count);
         for (int i = 0; i < nodes.Count; i++)
         {
             Vector3 prevNode = Vector3.zero;
             Vector3 currentNode = nodes[i].position;
+            print("prev node: " + prevNode + "current node: " + currentNode);
 
             if (i > 0)
             {

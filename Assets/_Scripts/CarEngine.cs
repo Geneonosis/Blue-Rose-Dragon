@@ -33,7 +33,22 @@ public class CarEngine : MonoBehaviour
                 nodes.Add(pathTranforms[i]);
             }
         }
-    }
+        /*for (int i = 0; i < nodes.Count; i++)
+        {
+            Vector3 prevNode = Vector3.zero;
+            Vector3 currentNode = nodes[i].position;
+            print("prev node: " + prevNode + "current node: " + currentNode);
+
+            if (i > 0)
+            {
+                prevNode = nodes[i - 1].position;
+            }
+            else if (i == 0 && nodes.Count > 1)
+            {
+                prevNode = nodes[nodes.Count - 1].position;
+            }
+        }*/
+        }
 
     // Update is called once per frame
     void FixedUpdate()
@@ -80,7 +95,8 @@ public class CarEngine : MonoBehaviour
         //print(Vector3.Distance(transform.position, nodes[curNode].position) < 0.05f);
         if (Vector3.Distance(transform.position, nodes[curNode].position) < 0.9f)
         {
-            print("Current node = " + curNode);
+
+            print("Current node = " + curNode + " node count -1: " + (nodes.Count - 1));
             if (curNode == nodes.Count - 1)
             {
                 curNode = 0;
@@ -95,6 +111,7 @@ public class CarEngine : MonoBehaviour
 
     private void SlowDown()
     {
+        print("Nodes.count: " + nodes.Count);
         if (curNode == nodes.Count-1)
         {
             distanceN_N = Vector3.Distance(nodes[curNode].position, nodes[0].position);

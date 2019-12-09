@@ -11,6 +11,7 @@ public class SpeedometerUpdate : MonoBehaviour
 
 
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,7 @@ public class SpeedometerUpdate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        text.SetText(driveScript.currentSpeed.ToString("0.00") + " MPH");
+
+        text.SetText(driveScript.currentSpeed.ToString() + " MPH");
     }
 }

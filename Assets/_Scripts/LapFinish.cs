@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 public class LapFinish : MonoBehaviour
 {
+    public int lapCount = 1;
 
     public GameObject LapCompleteTrig;
     public GameObject HalfLapTrig;
@@ -16,10 +17,22 @@ public class LapFinish : MonoBehaviour
 
     public GameObject LapTimeBox;
 
+    public TextMeshProUGUI LapNumberDisplay = null;
+    public GameObject finishInformation;
+
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {
+            lapCount++;
+            LapNumberDisplay.text = "" + lapCount;
+            if(lapCount > 3)
+            {
+                //TODO: pause the game and show finish information
+                finishInformation.SetActive(true);
+                Time.timeScale = 0;
+            }
+            
             if (LapTimeManage.SecondCounter <= 9)
             {
                 SecondDisplay.GetComponent<TextMeshProUGUI>().text = "0" + LapTimeManage.SecondCounter + ".";
